@@ -13,6 +13,7 @@ const GoToTopButton: FC = () => {
     }
   }, [show]);
 
+  // eslint-disable-next-line
   const scrollTop = () => {
     window.scrollTo({behavior: 'smooth', top: 0});
   };
