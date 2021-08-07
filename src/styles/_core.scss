@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -6,6 +8,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-size: 62.5% !important; // 1rem = 10px
 }
 
 body {
@@ -14,46 +17,4 @@ body {
   font-family: var(--font-family-default);
   font-size: var(--font-size-regular);
   line-height: 1.5;
-}
-
-#popover-root {
-  position: fixed;
-  top: 0;
-  z-index: 200;
-}
-
-#slide-up-root {
-  position: fixed;
-  bottom: 0;
-  z-index: 150;
-}
-
-b,
-strong {
-  font-weight: 800;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1;
-  margin: 0;
-}
-
-a {
-  color: var(--color-secondary);
-  text-decoration: none;
-}
-
-p {
-  margin: 0 0 20px;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding-inline-start: 32px;
 }
