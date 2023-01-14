@@ -11,6 +11,7 @@ export interface BaseButtonProps {
   onClick?(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void;
   type?: 'button' | 'reset' | 'submit';
   variant?: 'contained' | 'link' | 'outlined';
+  children?: React.ReactNode;
 }
 
 const Button: FC<BaseButtonProps> = ({

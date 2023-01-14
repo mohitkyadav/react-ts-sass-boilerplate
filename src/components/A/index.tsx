@@ -5,6 +5,7 @@ interface ComponentProps {
   className?: string;
   href: string;
   target?: string;
+  children?: React.ReactNode;
 }
 
 const A: FC<ComponentProps> = ({children, className, href, target = '_blank'}) => {
