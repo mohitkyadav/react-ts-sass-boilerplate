@@ -2,7 +2,6 @@ import React, {FC, useEffect, useState} from 'react';
 import clsx from 'clsx';
 import shuffle from 'lodash/shuffle';
 
-import {A} from '../../../components';
 import HelloWorld, {HelloWorldKeys, defaultHelloWorld} from './hello-world';
 import Hero from './Hero.png';
 import './HomeHero.scss';
@@ -47,10 +46,6 @@ const HomeHero: FC = () => {
           <div className="HomeHero__left-content-container">
             <span className={clsx('HomeHero__hello-world', helloFadeClass)}>{helloText}</span>
             <h1 className="HomeHero__title">react typescript sass boilerpate</h1>
-            <h2 className="HomeHero__subtitle">100% copied from</h2>
-            <A href="https://github.com/thenewboston-developers/Website">
-              https://github.com/thenewboston-developers/Website
-            </A>
             <h2 className="HomeHero__subtitle">Removed all the pages, components, containers, fonts and style.</h2>
           </div>
         </div>
