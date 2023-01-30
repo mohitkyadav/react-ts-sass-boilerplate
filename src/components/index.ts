@@ -1,7 +1,5 @@
-import A from './A';
-import {Button} from './FormElements';
-import GoToTop from './GoToTop';
-import HashLink from './HashLink';
-import PageTitle from './PageTitle';
-
-export {A, Button, GoToTop, HashLink, PageTitle};
+export {A} from './A/A';
+export {Button} from './FormElements';
+export {GoToTop} from './GoToTop/GoToTop';
+export {HashLink} from './HashLink/HashLink';
+export {PageTitle} from './PageTitle/PageTitle';

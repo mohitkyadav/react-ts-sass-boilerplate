@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import {getCustomClassNames} from 'utils/components';
 import './Button.scss';
 
-export interface BaseButtonProps {
+export interface ButtonProps {
   className?: string;
   color?: 'primary' | 'secondary' | 'tertiary';
   disabled?: boolean;
@@ -14,7 +14,7 @@ export interface BaseButtonProps {
   children?: React.ReactNode;
 }
 
-const Button: FC<BaseButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   children,
   color = 'primary',
   className,
@@ -39,5 +39,3 @@ const Button: FC<BaseButtonProps> = ({
     </button>
   );
 };
-
-export default Button;

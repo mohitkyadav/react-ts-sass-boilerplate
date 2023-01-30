@@ -2,7 +2,7 @@ import React, {FC, useCallback, useEffect, useState} from 'react';
 
 import './GoToTop.scss';
 
-const GoToTopButton: FC = () => {
+export const GoToTop: FC = () => {
   const [show, setShow] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
@@ -25,4 +25,3 @@ const GoToTopButton: FC = () => {
 
   return <>{Boolean(show) && 'Go to top'}</>;
 };
-export default GoToTopButton;

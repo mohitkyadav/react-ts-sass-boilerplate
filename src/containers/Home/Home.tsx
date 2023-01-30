@@ -4,11 +4,9 @@ import {PageTitle} from 'components';
 
 import HomeHero from './HomeHero';
 
-const Home: FC = () => (
+export const Home: FC = () => (
   <>
     <PageTitle title="Home" />
     <HomeHero />
   </>
 );
-
-export default Home;

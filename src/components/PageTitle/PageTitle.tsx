@@ -1,16 +1,14 @@
 import React, {FC} from 'react';
 import {Helmet} from 'react-helmet';
 
-interface ComponentProps {
+interface PageTitleProps {
   title: string;
 }
 
-const PageTitle: FC<ComponentProps> = ({title}) => {
+export const PageTitle: FC<PageTitleProps> = ({title}) => {
   return (
     <Helmet>
       <title>{title}</title>
     </Helmet>
   );
 };
-
-export default PageTitle;
